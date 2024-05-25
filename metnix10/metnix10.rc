@@ -1,0 +1,444 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (México) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+login DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inicio de sesión"
+MENU IDR_MENU1
+FONT 9, "MS Gothic", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ingresar",IDOK,129,137,50,14
+    EDITTEXT        IDC_EDIT1,95,50,119,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,94,106,120,14,ES_AUTOHSCROLL
+    LTEXT           "Usuario",IDC_STATIC,139,25,27,10
+    LTEXT           "Contraseña (RFC)",IDC_STATIC,134,84,40,8
+END
+
+listemp DIALOGEX 0, 0, 367, 276
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de Empleados"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,215,22,114,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre",IDC_STATIC,163,25,26,8
+    EDITTEXT        IDC_EDIT2,215,46,114,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "RFC",IDC_STATIC,169,49,14,8
+    EDITTEXT        IDC_EDIT3,215,70,114,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Clave del usuario",IDC_STATIC,147,73,56,8
+    EDITTEXT        IDC_EDIT4,217,94,114,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Contraseña",IDC_STATIC,157,97,38,8
+    CONTROL         "",bitmap,"Static",SS_BITMAP,263,148,15,13
+    LTEXT           "Foto",IDC_STATIC,167,143,16,8
+    LISTBOX         listboxemp,7,7,113,262,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Modificar",IDC_BUTTON1,125,255,50,14
+    PUSHBUTTON      "Borrar",IDC_BUTTON2,310,255,50,14
+    PUSHBUTTON      "Aceptar",IDC_BUTTON3,179,255,50,14,WS_DISABLED
+    EDITTEXT        nombre1,221,222,83,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",foto1,"Static",SS_BITMAP,179,222,15,13
+    PUSHBUTTON      "Insertar Imagen",IDC_BUTTON4,134,178,82,14,WS_DISABLED
+END
+
+regsal DIALOGEX 0, 0, 349, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro de salas"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",IDOK,235,155,50,14
+    PUSHBUTTON      "Salir",IDCANCEL,292,155,50,14
+    LTEXT           "Nombre y número de sala",IDC_STATIC,69,27,104,8
+    EDITTEXT        numsal,177,23,110,14,ES_AUTOHSCROLL
+    LTEXT           "Asientos disponibles",IDC_STATIC,84,54,65,8
+    EDITTEXT        IDC_EDIT3,177,49,109,14,ES_AUTOHSCROLL
+    CONTROL         "",foto2,"Static",SS_BITMAP,168,129,15,13
+    EDITTEXT        nombre2,127,92,97,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+regfunc DIALOGEX 0, 0, 351, 365
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro de funciones"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",IDOK,231,344,50,14
+    PUSHBUTTON      "Salir",IDCANCEL,294,344,50,14
+    EDITTEXT        IDC_EDIT1,104,38,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,104,62,71,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,105,225,100,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre de película",IDC_STATIC,19,40,61,8
+    LTEXT           "Duración",IDC_STATIC,18,65,29,8
+    LTEXT           "Clasificación",IDC_STATIC,16,88,40,8
+    LTEXT           "Idioma",IDC_STATIC,17,113,22,8
+    LTEXT           "Sala",IDC_STATIC,17,140,14,8
+    LTEXT           "Fecha",IDC_STATIC,17,171,20,8
+    LTEXT           "Hora",IDC_STATIC,19,198,16,8
+    LTEXT           "Precio de boleto",IDC_STATIC,15,227,52,8
+    COMBOBOX        IDC_COMBO1,104,87,100,72,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,106,135,99,64,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",foto4,"Static",SS_BITMAP,267,71,15,13
+    EDITTEXT        nombre4,223,22,105,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Insertar archivo",IDC_BUTTON1,117,253,68,14
+    LTEXT           "Insertar poster",IDC_STATIC,17,256,50,8
+    LTEXT           "ID Función",IDC_STATIC,21,17,35,8
+    EDITTEXT        IDC_EDIT12,103,14,95,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,105,165,100,15
+    COMBOBOX        IDC_COMBO4,105,195,100,95,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",bitmap11,"Static",SS_BITMAP,140,299,15,13
+    COMBOBOX        IDC_COMBO3,105,110,98,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "min",IDC_STATIC,182,63,19,12
+    LTEXT           "$",IDC_STATIC,95,228,10,12
+END
+
+listsal DIALOGEX 0, 0, 309, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de salas"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,173,169,50,14,WS_DISABLED
+    PUSHBUTTON      "Eliminar",IDCANCEL,252,169,50,14
+    LISTBOX         listboxsal,7,7,104,176,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,203,22,51,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Número de asientos",IDC_STATIC,129,25,64,8
+    PUSHBUTTON      "Modificar",IDC_BUTTON1,116,169,50,14
+    CONTROL         "",foto3,"Static",SS_BITMAP,203,116,15,13
+    EDITTEXT        nombre3,165,87,96,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+ventvent DIALOGEX 0, 0, 571, 337
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ventas"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,455,316,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,514,316,50,14
+    EDITTEXT        IDC_EDIT9,239,234,100,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre de película",listbox3,145,28,61,8
+    LTEXT           "Idioma",IDC_STATIC,147,123,22,8
+    LTEXT           "Sala",IDC_STATIC,146,150,14,8
+    LTEXT           "Fecha",IDC_STATIC,146,62,20,8
+    LTEXT           "Hora",IDC_STATIC,148,89,16,8
+    LTEXT           "Precio unitario",IDC_STATIC,149,237,46,8
+    COMBOBOX        IDC_COMBO2,235,146,99,64,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,235,56,100,15
+    CONTROL         "",bitmap0,"Static",SS_BITMAP,451,65,15,13
+    EDITTEXT        IDC_EDIT7,237,175,101,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Boletos disponibles",IDC_STATIC,145,178,61,8
+    EDITTEXT        IDC_EDIT1,239,205,100,14,ES_AUTOHSCROLL
+    LTEXT           "Boletos a comprar",IDC_STATIC,146,204,58,8
+    COMBOBOX        IDC_COMBO3,241,296,99,42,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Forma de pago",IDC_STATIC,151,298,49,8
+    CONTROL         "",foto7,"Static",SS_BITMAP,461,243,15,13
+    EDITTEXT        nombre7,415,214,116,14,ES_AUTOHSCROLL | WS_DISABLED
+    COMBOBOX        IDC_COMBO4,235,87,100,49,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,235,119,98,38,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST1,7,7,126,323,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        nompel,235,25,100,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "$",IDC_STATIC,228,235,10,12
+    EDITTEXT        IDC_EDIT3,241,263,97,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "$",IDC_STATIC,227,264,10,12
+    LTEXT           "Precio total",IDC_STATIC,153,266,37,8
+END
+
+repvent DIALOGEX 0, 0, 375, 243
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reporte de ventas"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Reporte",IDOK,158,222,50,14
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,25,18,105,23
+    EDITTEXT        IDC_EDIT1,147,93,154,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Ventas en efectivo",IDC_STATIC,43,98,61,8
+    LTEXT           "Ventas con tarjeta",IDC_STATIC,47,134,60,8
+    EDITTEXT        IDC_EDIT2,148,130,153,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",foto8,"Static",SS_BITMAP,295,47,15,13
+    EDITTEXT        nombre8,257,17,90,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Total ventas",IDC_STATIC,49,175,41,8
+    EDITTEXT        IDC_EDIT3,147,170,154,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "$",IDC_STATIC,133,172,8,8
+    LTEXT           "$",IDC_STATIC,134,98,8,8
+    LTEXT           "$",IDC_STATIC,133,133,8,8
+END
+
+listfunc DIALOGEX 0, 0, 325, 367
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de funciones"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,127,346,50,14,WS_DISABLED
+    PUSHBUTTON      "Eliminar",IDCANCEL,268,346,50,14
+    EDITTEXT        IDC_EDIT2,209,44,71,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT6,207,151,101,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT9,209,233,100,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Nombre de película",IDC_STATIC,121,24,61,8
+    LTEXT           "Duración",IDC_STATIC,123,47,29,8
+    LTEXT           "Clasificación",IDC_STATIC,121,70,40,8
+    LTEXT           "Sala",IDC_STATIC,125,103,14,8
+    LTEXT           "Cantidad de Asientos",IDC_STATIC,121,153,69,8
+    LTEXT           "Fecha",IDC_STATIC,125,182,20,8
+    LTEXT           "Hora",IDC_STATIC,126,209,16,8
+    LTEXT           "Precio de boleto",IDC_STATIC,123,235,52,8
+    COMBOBOX        IDC_COMBO2,209,98,99,64,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,209,179,100,15
+    EDITTEXT        IDC_EDIT3,209,71,96,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",bitmap111,"Static",SS_BITMAP,242,277,15,13
+    LISTBOX         listboxfunc,7,7,102,238,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,209,18,96,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Idioma",IDC_STATIC,125,131,22,8
+    COMBOBOX        IDC_COMBO4,209,124,99,64,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",foto5,"Static",SS_BITMAP,47,286,15,13
+    EDITTEXT        nombre5,14,251,86,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Modificar",IDC_BUTTON2,69,346,50,14
+    COMBOBOX        IDC_COMBO1,209,206,101,74,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "min",IDC_STATIC,286,46,19,12
+    LTEXT           "$",IDC_STATIC,198,236,10,12
+    PUSHBUTTON      "Insertar Imagen",IDC_BUTTON3,103,279,75,14,WS_DISABLED
+END
+
+ventregemp DIALOGEX 0, 0, 289, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro de empleados"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",IDOK,178,239,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,232,239,50,14
+    EDITTEXT        nomemp,121,22,114,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre",IDC_STATIC,69,25,26,8
+    EDITTEXT        rfcemp,121,46,114,14,ES_AUTOHSCROLL
+    LTEXT           "RFC",IDC_STATIC,75,49,14,8
+    EDITTEXT        claveemp,121,74,114,14,ES_AUTOHSCROLL
+    LTEXT           "Clave del usuario",IDC_STATIC,53,77,56,8
+    EDITTEXT        contemp,121,103,114,14,ES_AUTOHSCROLL
+    LTEXT           "Contraseña",IDC_STATIC,63,106,38,8
+    LTEXT           "Foto",IDC_STATIC,71,144,16,8
+    PUSHBUTTON      "Subir imagen",subimg,123,139,111,14
+    CONTROL         "",regfoto,"Static",SS_BITMAP,171,183,15,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    listemp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    regsal, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    regfunc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    listsal, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    ventvent, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 564
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    repvent, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    listfunc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+
+    ventregemp, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+login AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listemp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+regsal AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+regfunc AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listsal AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ventvent AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+repvent AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+listfunc AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ventregemp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Registrar"
+    BEGIN
+        MENUITEM "Salas",                       ID_REGISTRAR_SALAS
+        MENUITEM "Empleados",                   ID_REGISTRAR_EMPLEADOS
+        MENUITEM "Funciones",                   ID_REGISTRAR_FUNCIONES
+    END
+    POPUP "Ver"
+    BEGIN
+        MENUITEM "Salas",                       ID_VER_SALAS
+        MENUITEM "Empleados",                   ID_VER_EMPLEADOS
+        MENUITEM "Funciones",                   ID_VER_FUNCIONES
+    END
+    MENUITEM "Ventas",                      ID_VENTAS
+    MENUITEM "Reporte de ventas",           ID_REPORTEDEVENTAS
+END
+
+#endif    // Español (México) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
